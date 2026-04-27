@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+
+  background:
+    radial-gradient(circle at top, rgba(15,15,15,0.85), #00000088),
+    url("fundal.jpeg") center/cover no-repeat;
+
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #eaeaea;
+  text-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+header p {
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+/* TOWER CARD */
+.card {
+  position: relative;
+  width: 240px;
+  height: 520px; /* tall tower */
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.25);
+  box-shadow: 0 0 35px rgba(255,255,255,0.08);
+}
+
+/* IMAGE fills the entire card */
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(0.95);
+}
+
+/* TITLE BAR at the top of the card */
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 18px 20px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* MODEL CARDS FOR DETAIL PAGES */
+.model-card {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  flex-wrap: wrap;
+}
+
+.model-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.25);
+  box-shadow: 0 0 40px rgba(255,255,255,0.1);
+}
+
+.model-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: 0.3s ease;
+}
+
+.model-card:hover img {
+  filter: brightness(0.9);
+}
+
+.model-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.95) 100%);
+  padding: 30px 20px 20px;
+  color: white;
+  z-index: 2;
+}
+
+.model-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.model-info p {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* No body text */
+.card-body {
+  display: none;
+}
+
+/* Ensure details panel is always visible */
+.details {
+  z-index: 9999;
+}
+
+/* More breathing room between towers */
+.container {
+  gap: 45px;
+}
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Panamera - VAG Showroom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .detail-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .detail-image {
+      position: relative;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .detail-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail-info h2 {
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+
+    .detail-info p {
+      font-size: 16px;
+      line-height: 1.8;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .spec-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .spec-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .spec-value {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .features-section h3 {
+      font-size: 28px;
+      margin: 40px 0 20px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .feature-item {
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid rgba(255,255,255,0.3);
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      transition: 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .detail-header {
+        grid-template-columns: 1fr;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <a href="porsche.html" class="btn-back">← Înapoi la Porsche</a>
+  </div>
+</header>
+
+<div class="detail-container">
+
+  <div class="detail-header">
+    <div class="detail-image">
+      <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80" alt="Panamera">
+    </div>
+    <div class="detail-info">
+      <h2>Panamera</h2>
+      <p>Sedan-ul sport ultra-rapid care redefinește luxul pe patru roți. Porsche Panamera combină performanța unui supercar cu confortul unui sedan executive, oferind o experiență de condus fără compromisuri și un design care întoarce capetele.</p>
+      
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-label">Motor</div>
+          <div class="spec-value">2.9 V6 Turbo</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Putere</div>
+          <div class="spec-value">353 CP</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">0-100 km/h</div>
+          <div class="spec-value">5.6s</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Consum mediu</div>
+          <div class="spec-value">7.8 L/100</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Viteză max</div>
+          <div class="spec-value">272 km/h</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Cuplu</div>
+          <div class="spec-value">500 Nm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>Caracteristici Principale</h3>
+    <div class="features-list">
+      <div class="feature-item">
+        <strong>🚀 Performanță Hibridă</strong>
+        Sistem E-Hybrid cu autonomie electrică de până la 90km
+      </div>
+      <div class="feature-item">
+        <strong>🎯 Suspensie Activ Ride</strong>
+        Sistem electrohidraulic cu control independent pe fiecare roată
+      </div>
+      <div class="feature-item">
+        <strong>📱 Cockpit Digital Avansat</strong>
+        Ecran central de 12.3" cu interfață Porsche Communication Management
+      </div>
+      <div class="feature-item">
+        <strong>🔊 Audio Burmester</strong>
+        Sistem 3D surround cu 21 de difuzoare de înaltă performanță
+      </div>
+      <div class="feature-item">
+        <strong>🛡️ Siguranță de Top</strong>
+        Sisteme de asistență avansate inclusiv night vision și adaptive cruise
+      </div>
+      <div class="feature-item">
+        <strong>💺 Confort Executive</strong>
+        Scaune cu masaj și ventilație pentru pasageri față și spate
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>De ce Panamera este SPECIAL?</h3>
+    <div class="features-list" style="grid-template-columns: 1fr;">
+      <div class="feature-item">
+        <strong>Revoluție în segment</strong> - Primul sedan sport cu 5 uși care nu compromite design-ul
+      </div>
+      <div class="feature-item">
+        <strong>Tehnologie viitoristă</strong> - Hibrid plug-in cu încărcare rapidă și eficiență maximă
+      </div>
+      <div class="feature-item">
+        <strong>Lux pentru toată lumea</strong> - Spațiu generos pentru 4 adulți și bagaje ample
+      </div>
+      <div class="feature-item">
+        <strong>Prestigiu etern</strong> - Simbol al inovației Porsche de peste 70 de ani
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

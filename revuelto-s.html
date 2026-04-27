@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Revuelto S - VAG Showroom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .detail-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .detail-image {
+      position: relative;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .detail-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail-info h2 {
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+
+    .detail-info p {
+      font-size: 16px;
+      line-height: 1.8;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .spec-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .spec-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .spec-value {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .features-section h3 {
+      font-size: 28px;
+      margin: 40px 0 20px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .feature-item {
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid rgba(255,255,255,0.3);
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      transition: 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .detail-header {
+        grid-template-columns: 1fr;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <a href="lamborghini.html" class="btn-back">← Înapoi la Lamborghini</a>
+  </div>
+</header>
+
+<div class="detail-container">
+
+  <div class="detail-header">
+    <div class="detail-image">
+      <img src="Revuelto S.png" alt="Revuelto S">
+    </div>
+    <div class="detail-info">
+      <h2>Revuelto S</h2>
+      <p>Versiunea sport a hypercar-ului hybrid. Lamborghini Revuelto S reprezintă vârful performanței în gama Revuelto, cu optimizări speciale pentru track și accelerație maximă, păstrând totuși versatilitatea sistemului hibrid.</p>
+      
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-label">Motor</div>
+          <div class="spec-value">V12 Hybrid Sport</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Putere</div>
+          <div class="spec-value">1050 CP</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">0-100 km/h</div>
+          <div class="spec-value">2.3s</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Autonomie electrică</div>
+          <div class="spec-value">12 km</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Viteză max</div>
+          <div class="spec-value">355 km/h</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Cuplu</div>
+          <div class="spec-value">1150 Nm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>Caracteristici Principale</h3>
+    <div class="features-list">
+      <div class="feature-item">
+        <strong>⚡ Putere Îmbunătățită</strong>
+        Sistem hibrid optimizat pentru performanță maximă pe circuit
+      </div>
+      <div class="feature-item">
+        <strong>🎯 Suspensie Sport</strong>
+        Setări speciale pentru track cu rigiditate crescută
+      </div>
+      <div class="feature-item">
+        <strong>📱 Moduri Track</strong>
+        Programe speciale pentru condus pe circuit cu telemetrie
+      </div>
+      <div class="feature-item">
+        <strong>🔊 Sunet Sport</strong>
+        Experiență acustică amplificată pentru senzații intense
+      </div>
+      <div class="feature-item">
+        <strong>🛡️ Aerodinamică Optimizată</strong>
+        Elemente aerodinamice speciale pentru downforce maxim
+      </div>
+      <div class="feature-item">
+        <strong>💺 Scaune Sport</strong>
+        Susținere laterală extremă pentru condus agresiv
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>De ce Revuelto S este SPECIAL?</h3>
+    <div class="features-list" style="grid-template-columns: 1fr;">
+      <div class="feature-item">
+        <strong>Performanță de top</strong> - Vârful gamei Revuelto cu optimizări pentru circuit
+      </div>
+      <div class="feature-item">
+        <strong>Exclusivitate maximă</strong> - Număr foarte limitat de exemplare pentru piloți
+      </div>
+      <div class="feature-item">
+        <strong>Tehnologie avansată</strong> - Sistem hibrid calibrat pentru accelerație instantanee
+      </div>
+      <div class="feature-item">
+        <strong>Experiență pură</strong> - Pentru cei care trăiesc pentru senzația de viteză
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Huracan - VAG Showroom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .detail-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .detail-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .detail-image {
+      position: relative;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .detail-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail-info h2 {
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+
+    .detail-info p {
+      font-size: 16px;
+      line-height: 1.8;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .spec-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .spec-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .spec-value {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .features-section h3 {
+      font-size: 28px;
+      margin: 40px 0 20px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .feature-item {
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid rgba(255,255,255,0.3);
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      transition: 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .detail-header {
+        grid-template-columns: 1fr;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <a href="lamborghini.html" class="btn-back">← Înapoi la Lamborghini</a>
+  </div>
+</header>
+
+<div class="detail-container">
+
+  <div class="detail-header">
+    <div class="detail-image">
+      <img src="huracan.png" alt="Huracan">
+    </div>
+    <div class="detail-info">
+      <h2>Huracán</h2>
+      <p>Supercar legendar - legile fizicii nu se aplică. Lamborghini Huracán reprezintă esența performanței italiene, cu un motor V10 natural aspirat care produce sunetul cel mai iconic din lume și accelerație care îți taie respirația.</p>
+      
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-label">Motor</div>
+          <div class="spec-value">5.2 V10</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Putere</div>
+          <div class="spec-value">630 CP</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">0-100 km/h</div>
+          <div class="spec-value">2.8s</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Consum mediu</div>
+          <div class="spec-value">15 L/100</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Viteză max</div>
+          <div class="spec-value">350 km/h</div>
+        </div>
+        <div class="spec-box">
+          <div class="spec-label">Cuplu</div>
+          <div class="spec-value">565 Nm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>Caracteristici Principale</h3>
+    <div class="features-list">
+      <div class="feature-item">
+        <strong>🚀 Motor V10 Natural</strong>
+        Sunetul cel mai iconic din lume - 630 CP fără compromisuri
+      </div>
+      <div class="feature-item">
+        <strong>🎯 Manevrabilitate Extremă</strong>
+        Arhitectură mid-engine pentru distribuție perfectă a greutății
+      </div>
+      <div class="feature-item">
+        <strong>📱 Infotainment Modern</strong>
+        Ecran tactil de 8.4" cu Apple CarPlay și controale vocale
+      </div>
+      <div class="feature-item">
+        <strong>🔊 Experiență Acustică</strong>
+        Sistem audio premium cu sunet surround pentru cockpit
+      </div>
+      <div class="feature-item">
+        <strong>🛡️ Dinamică Avansată</strong>
+        Moduri de condus multiple: Strada, Sport, Corsa
+      </div>
+      <div class="feature-item">
+        <strong>💺 Confort Sportiv</strong>
+        Scaune sport cu susținere laterală optimizată pentru track
+      </div>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h3>De ce Huracan este SPECIAL?</h3>
+    <div class="features-list" style="grid-template-columns: 1fr;">
+      <div class="feature-item">
+        <strong>Ultimul V10 natural</strong> - Generația finală a legendei care a definit supercar-urile moderne
+      </div>
+      <div class="feature-item">
+        <strong>Emoție pură</strong> - Fiecare accelerație este o sărbătoare, fiecare viraj o provocare
+      </div>
+      <div class="feature-item">
+        <strong>Exclusivitate</strong> - Numai pentru cei care înțeleg adevăratul sens al performanței
+      </div>
+      <div class="feature-item">
+        <strong>Investiție în pasiune</strong> - Valoarea crește odată cu raritatea acestei generații finale
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

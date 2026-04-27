@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #eaeaea;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  margin: 0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* INTRO */
+.intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* ERA SECTIONS */
+.era {
+  margin-top: 80px;
+}
+
+/* BANNER WITH CENTERED TITLE + BORDER BOX */
+.era-banner {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.era-banner h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+
+  padding: 20px 40px; /* gap between text and border */
+
+  border: 3px solid rgba(255,255,255,0.7);
+  border-radius: 12px;
+
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+}
+
+/* ERA TEXT */
+.era-text {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.era-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}

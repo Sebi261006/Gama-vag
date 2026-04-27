@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>VAG Showroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>VAG SHOWROOM</h1>
+  <p>Explorează gama completă Volkswagen Group</p>
+</header>
+
+<div class="container">
+
+  
+<div class="card" onclick="window.location.href='volkswagen.html'">
+  <img src="vw.png" alt="Volkswagen">
+  <div class="card-header">Volkswagen</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='audi.html'">
+  <img src="audi.png" alt="Audi">
+  <div class="card-header">Audi</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='porsche.html'">
+  <img src="911.png" alt="Porsche">
+  <div class="card-header">Porsche</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='lamborghini.html'">
+  <img src="lamborghini.png" alt="Lamborghini">
+  <div class="card-header">Lamborghini</div>
+</div>
+
+</div>
+
+<script>
+function toggleCard(card) {
+  // close others
+  document.querySelectorAll('.card').forEach(c => {
+    if (c !== card) c.classList.remove('active');
+  });
+
+  // toggle clicked one
+  card.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
